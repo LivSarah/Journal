@@ -1,0 +1,36 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "JournalExpressServer.js",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "password-hash": "^1.2.2",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.18.4",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node src/JournalExpressServer.js",
+    "build": "cd app && npm build",
+    "dev": "concurrently \"npm run server\" \"npm run frontent\"",
+    "server": "PORT=3001 nodemon src/JournalExpressServer.js",
+    "frontent": "cd app && npm start",
+    "postinstall": "cd app && npm install"
+  },
+  "author": "",
+  "license": "ISC"
+}

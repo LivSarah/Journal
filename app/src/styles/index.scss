@@ -1,0 +1,213 @@
+body {
+	height: 900px;
+	background-color: #fbeee6;
+}
+header {
+	background: url("https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+	margin: 0 0 70px 0;
+}
+header .overlay {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 100px 50px 330px 50px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #333;
+	background-image: linear-gradient(135deg, #e6e2d369 10%, #b9936c6b 100%);
+}
+
+h1 {
+	font-family: "Dancing Script", cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+h2 {
+	color: rgba(194, 163, 144, 0.699);
+}
+
+h3,
+p {
+	font-family: "Open Sans", sans-serif;
+	margin-bottom: 30px;
+}
+
+.journal_body_content {
+	margin: 3em;
+}
+
+.card {
+	width: 75%;
+	margin: 1em 0;
+	border-radius: 0.25rem;
+}
+
+.card-img {
+	border-radius: 0.25rem;
+}
+
+.btn-light {
+	background-color: white;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.row {
+	flex-wrap: nowrap;
+}
+
+.col-md-8 {
+	flex: 0 0 60%;
+	max-width: 60%;
+}
+
+.edit-and-update {
+	padding: 1.25rem;
+	flex: auto;
+}
+
+i {
+	padding: 0 0.4rem;
+	font-size: 1.5em;
+}
+
+.fa-edit {
+	color: rgb(85, 85, 212);
+}
+
+.fa-trash-alt {
+	color: rgb(167, 24, 24);
+}
+
+.fa-plus {
+	color: rgb(35, 214, 35);
+}
+
+.login_page {
+	display: flex;
+	height: 500px;
+	justify-content: center;
+	align-items: center;
+}
+
+.login_container {
+	form {
+		max-width: 20rem;
+	}
+	h2 {
+		padding: 0 0 1rem;
+	}
+}
+
+.new_entry_form {
+	display: inline-flex;
+	align-items: center;
+	padding: 1em;
+	margin: 3em;
+	width: 60%;
+	border: 1px solid rgba(194, 163, 144, 0.568);
+	border-radius: 0.25rem;
+	form {
+		width: 100%;
+	}
+	.entry_body {
+		height: 9rem;
+	}
+	h2 {
+		margin: 0 0 1em;
+	}
+}
+.rememberme-signup {
+	display: flex;
+	justify-content: space-between;
+	a {
+		display: inline-flex;
+		color: rgba(194, 163, 144, 0.699);
+	}
+}
+
+/* SIGNUP MODAL START*/
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 30%; /* Could be more or less, depending on screen size */
+	min-width: 15rem;
+}
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* SIGNUP MODAL END */
+
+.modal-form {
+	p {
+		font-family: "Trebuchet MS";
+		font-weight: 0;
+		font-style: normal;
+		display: inline;
+		color: white;
+	}
+	i {
+		color: white;
+		font-weight: 0;
+	}
+}
+
+.signout_form {
+	position:fixed;
+	right:10px;
+	top:5px;
+	p {
+		display: inline;
+		color: white; 
+	}
+	i {
+		color: white; 
+	}
+}
+
+/* Hide overlay box when css is done loading */
+#loadOverlay {
+	display: none;
+}

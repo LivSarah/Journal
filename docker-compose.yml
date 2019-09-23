@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres:11
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: spacehamster
+      POSTGRES_USER: sarah_db
+      POSTGRES_DB: development
+    ports:
+      - "127.0.0.1:5432:5432"
